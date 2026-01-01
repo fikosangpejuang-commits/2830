@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Satu Nama Dalam Doa</title>
+
+<!-- Font klasik -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #889063, #354024);
+        font-family: 'Cormorant Garamond', serif;
+    }
+
+    .book {
+        background: #ffffff;
+        width: 90%;
+        max-width: 800px;
+        padding: 60px 50px;
+        position: relative;
+        box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+        border-radius: 8px;
+        animation: fadeIn 1.8s ease;
+    }
+
+    /* garis dekorasi kiri */
+    .book::before {
+        content: "";
+        position: absolute;
+        left: 30px;
+        top: 40px;
+        bottom: 40px;
+        width: 3px;
+        background: linear-gradient(to bottom, transparent, #999, transparent);
+        opacity: 0.6;
+    }
+
+    /* foto di dalam halaman */
+    .photo {
+        width: 160px;
+        margin: 0 auto 35px;
+    }
+
+    .photo img {
+        width: 100%;
+        border-radius: 6px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        margin-bottom: 35px;
+        font-size: 30px;
+        color: #2d2d2d;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.85;
+        text-align: justify;
+        color: #2f2f2f;
+        opacity: 0;
+        animation: textFade 1.3s ease forwards;
+    }
+
+    p:nth-of-type(1) { animation-delay: .4s; }
+    p:nth-of-type(2) { animation-delay: .8s; }
+    p:nth-of-type(3) { animation-delay: 1.2s; }
+    p:nth-of-type(4) { animation-delay: 1.6s; }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.96); }
+        to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes textFade {
+        to { opacity: 1; }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Musik otomatis -->
+<audio autoplay loop>
+    <source src="musik.mp3" type="audio/mpeg">
+</audio>
+
+<div class="book">
+
+    <!-- FOTO (BUKAN BACKGROUND) -->
+    <div class="photo">
+        <img src="foto.jpg" alt="Foto">
+    </div>
+
+    <h1>Satu nama yang kusebut dalam doa</h1>
+
+    <p>
+        Izinkan aku terus merapalkan doa-doa untuk kebahagiaanmu dalam setiap diamku.
+        Karena doa adalah satu-satunya cara aku merasa bisa dekat denganmu tanpa kau tahu.
+    </p>
+
+    <p>
+        Aku meminta kepada Sang Pemilik Semesta agar selalu menjagamu, selalu melindungimu,
+        selalu memberikan kebahagiaan yang berlimpah, sekalipun aku tak pernah mampu menjadi
+        alasan kebahagiaan itu.
+    </p>
+
+    <p>
+        Perasaan yang tak ingin dimenangkan, tak perlu diperjuangkan,
+        cukup kusimpan baik-baik sebagai kali terakhir hatiku memilih seseorang
+        dengan sepenuhnya.
+    </p>
+
+    <p>
+        Itulah bentuk kagum yang paling tulus—tak mengikat, tak membebani, hanya menjaga.
+    </p>
+
+</div>
+
+</body>
+</html>
